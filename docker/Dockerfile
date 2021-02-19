@@ -37,7 +37,7 @@ RUN /bin/su -c "touch .Xauthority" - fsds
 
 COPY . /fsds 
 
-CMD "sh /fsds/run.sh"
+CMD ["/bin/sh", "/fsds/run.sh"]
 # /bin/su -c ./fsds-v2.0.0-linux/FSDS.sh - fsds
 
 # RUN apt-get install checkinstall ros-kinetic-catkin python-catkin-tools git-all -y
