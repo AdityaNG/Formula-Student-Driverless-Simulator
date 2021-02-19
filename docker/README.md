@@ -13,9 +13,9 @@ To obtain your Diplay Cookie, run `xauth list`. Refer to [Display Cookie](#displ
 After that, you should be able run the container using the following, which will pull the container and launch the app :
 
 ```bash
-docker run --runtime=nvidia -it -d --gpus all --net=host \ 
+docker run --runtime=nvidia -it -d --gpus all --net=host \
 	-e DISPLAY -v /tmp/.X11-unix -e NVIDIA_DRIVER_CAPABILITIES=all \
-	--env DISPLAY_COOKIE="(DISPLAY_COOKIE)" adityang5/fsds:v1 \ 
+	--env DISPLAY_COOKIE="(DISPLAY_COOKIE)" adityang5/fsds:v1 \
 	/bin/sh /fsds/run.sh
 ```
 
@@ -92,4 +92,6 @@ xauth list
 username/machine:0 MIT-MAGIC-COOKIE-1 [32 character string]
 ```
 
+# Specifying a settings.json
 
+TODO : This is being implemented
