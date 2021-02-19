@@ -8,8 +8,8 @@ A Docker container to run FSDS
 
 ## Running manually
 
-First make sure the host system is setup with the appropriate runtime, refer to (Setup)[#setup].
-To obtain your Diplay Cookie, run `xauth list`. Refer to (Display Cookie)[#display-cookie]
+First make sure the host system is setup with the appropriate runtime, refer to [Setup](#setup).
+To obtain your Diplay Cookie, run `xauth list`. Refer to [Display Cookie](#display-cookie)
 After that, you should be able run the container using the following, which will pull the container and launch the app :
 
 ```bash
@@ -22,6 +22,7 @@ docker run --runtime=nvidia -it -d --gpus all --net=host \
 ## With Dockerfile
 
 To create your own docker container to work with, you can use the following template
+
 ```Dockerfile
 FROM adityang5/fsds:v1
 
